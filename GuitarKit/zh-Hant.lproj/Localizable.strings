@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  GuitarUtilities
+
+  Created by Yukai Chang on 2021/4/12.
+  
+*/
+
+"Tuner" = "調音器";
+"Metronome" = "節拍器";
+"Make some noise!" = "撥動空弦吧!";
+"Great!" = "剛剛好!";
+"Loosen up!" = "調鬆一點!";
+"Tighten up!" = "調緊一點!";
+"start" = "開始";
+"stop" = "停止";

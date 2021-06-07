@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BBBD1C4214E50C67F053C85 /* Pods_GuitarKit_GuitarKitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BAA034CF2766E8833BF86D /* Pods_GuitarKit_GuitarKitUITests.framework */; };
+		88246549262029B2008B0695 /* GuitarKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88246548262029B2008B0695 /* GuitarKitApp.swift */; };
+		8824654B262029B2008B0695 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824654A262029B2008B0695 /* ContentView.swift */; };
+		8824654D262029B2008B0695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8824654C262029B2008B0695 /* Assets.xcassets */; };
+		88246550262029B2008B0695 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8824654F262029B2008B0695 /* Preview Assets.xcassets */; };
+		8824655B262029B2008B0695 /* GuitarKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824655A262029B2008B0695 /* GuitarKitTests.swift */; };
+		88246566262029B2008B0695 /* GuitarKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88246565262029B2008B0695 /* GuitarKitUITests.swift */; };
+		8824657726202F5D008B0695 /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824657626202F5D008B0695 /* TunerView.swift */; };
+		882B43522659134B0021A0B6 /* beat1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 882B43512659134B0021A0B6 /* beat1.m4a */; };
+		882B4354265913520021A0B6 /* beat2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 882B4353265913520021A0B6 /* beat2.m4a */; };
+		882B435626593DFE0021A0B6 /* MetronomeConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882B435526593DFE0021A0B6 /* MetronomeConductor.swift */; };
+		8832B9E82624069A002D93FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8832B9EA2624069A002D93FC /* Localizable.strings */; };
+		8839EDBF26582C3500753B5E /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EDBE26582C3500753B5E /* MetronomeView.swift */; };
+		8851489726463CB500D3B895 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8851489626463CB500D3B895 /* AudioKit */; };
+		8852219026305A9A005E3F06 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852218F26305A9A005E3F06 /* Extensions.swift */; };
+		88A480DA2664A56200E3E9E5 /* AdMobViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A480D92664A56200E3E9E5 /* AdMobViews.swift */; };
+		88A480DC2665DEBA00E3E9E5 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A480DB2665DEBA00E3E9E5 /* UserDefaults.swift */; };
+		88B7D2762655118C0082AD76 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7D2752655118C0082AD76 /* Notes.swift */; };
+		88CC662826455AC50097FD14 /* TunerConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CC662726455AC50097FD14 /* TunerConductor.swift */; };
+		98A667DD220702B655A46F53 /* Pods_GuitarKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE710199C0AF773BB6364491 /* Pods_GuitarKitTests.framework */; };
+		FFCA71FE8759D50E07C86E56 /* Pods_GuitarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C17E594B53DF4BB8DD6BED /* Pods_GuitarKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88246557262029B2008B0695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8824653D262029B2008B0695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88246544262029B2008B0695;
+			remoteInfo = GuitarUtilities;
+		};
+		88246562262029B2008B0695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8824653D262029B2008B0695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88246544262029B2008B0695;
+			remoteInfo = GuitarUtilities;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DFAB0CBEFA04AD86A7A011F /* Pods-GuitarKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarKit.release.xcconfig"; path = "Target Support Files/Pods-GuitarKit/Pods-GuitarKit.release.xcconfig"; sourceTree = "<group>"; };
+		803EE886111C04C0C3746AB0 /* Pods-GuitarKit-GuitarKitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarKit-GuitarKitUITests.debug.xcconfig"; path = "Target Support Files/Pods-GuitarKit-GuitarKitUITests/Pods-GuitarKit-GuitarKitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		86BAA034CF2766E8833BF86D /* Pods_GuitarKit_GuitarKitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarKit_GuitarKitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88246545262029B2008B0695 /* GuitarKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88246548262029B2008B0695 /* GuitarKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarKitApp.swift; sourceTree = "<group>"; };
+		8824654A262029B2008B0695 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8824654C262029B2008B0695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8824654F262029B2008B0695 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88246551262029B2008B0695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88246556262029B2008B0695 /* GuitarKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8824655A262029B2008B0695 /* GuitarKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarKitTests.swift; sourceTree = "<group>"; };
+		8824655C262029B2008B0695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88246561262029B2008B0695 /* GuitarKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88246565262029B2008B0695 /* GuitarKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarKitUITests.swift; sourceTree = "<group>"; };
+		88246567262029B2008B0695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8824657626202F5D008B0695 /* TunerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerView.swift; sourceTree = "<group>"; };
+		882B43512659134B0021A0B6 /* beat1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = beat1.m4a; path = ../../../audio/beat1.m4a; sourceTree = "<group>"; };
+		882B4353265913520021A0B6 /* beat2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = beat2.m4a; path = ../../../audio/beat2.m4a; sourceTree = "<group>"; };
+		882B435526593DFE0021A0B6 /* MetronomeConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeConductor.swift; sourceTree = "<group>"; };
+		8839EDBE26582C3500753B5E /* MetronomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeView.swift; sourceTree = "<group>"; };
+		8852218F26305A9A005E3F06 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8897AA91266DC6DA0010210C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8897AA92266DC6EE0010210C /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		88A480D92664A56200E3E9E5 /* AdMobViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobViews.swift; sourceTree = "<group>"; };
+		88A480DB2665DEBA00E3E9E5 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		88B7D2752655118C0082AD76 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		88CC662726455AC50097FD14 /* TunerConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerConductor.swift; sourceTree = "<group>"; };
+		A274CBF20FBD77B625D621F3 /* Pods-GuitarKit-GuitarKitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarKit-GuitarKitUITests.release.xcconfig"; path = "Target Support Files/Pods-GuitarKit-GuitarKitUITests/Pods-GuitarKit-GuitarKitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4145A560B55CB07AEDD506C /* Pods-GuitarKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarKit.debug.xcconfig"; path = "Target Support Files/Pods-GuitarKit/Pods-GuitarKit.debug.xcconfig"; sourceTree = "<group>"; };
+		B6A0D575F8F8CB961157384E /* Pods-GuitarKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarKitTests.debug.xcconfig"; path = "Target Support Files/Pods-GuitarKitTests/Pods-GuitarKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7C17E594B53DF4BB8DD6BED /* Pods_GuitarKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE710199C0AF773BB6364491 /* Pods_GuitarKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D502E7D3F649248C95BB4641 /* Pods-GuitarKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarKitTests.release.xcconfig"; path = "Target Support Files/Pods-GuitarKitTests/Pods-GuitarKitTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88246542262029B2008B0695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8851489726463CB500D3B895 /* AudioKit in Frameworks */,
+				FFCA71FE8759D50E07C86E56 /* Pods_GuitarKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88246553262029B2008B0695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A667DD220702B655A46F53 /* Pods_GuitarKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8824655E262029B2008B0695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBBD1C4214E50C67F053C85 /* Pods_GuitarKit_GuitarKitUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DD633CBB27B95B3F47B821C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7C17E594B53DF4BB8DD6BED /* Pods_GuitarKit.framework */,
+				86BAA034CF2766E8833BF86D /* Pods_GuitarKit_GuitarKitUITests.framework */,
+				CE710199C0AF773BB6364491 /* Pods_GuitarKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8824653C262029B2008B0695 = {
+			isa = PBXGroup;
+			children = (
+				88246547262029B2008B0695 /* GuitarKit */,
+				88246559262029B2008B0695 /* GuitarKitTests */,
+				88246564262029B2008B0695 /* GuitarKitUITests */,
+				88246546262029B2008B0695 /* Products */,
+				CAE42A5E55755E242D0EF674 /* Pods */,
+				3DD633CBB27B95B3F47B821C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88246546262029B2008B0695 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88246545262029B2008B0695 /* GuitarKit.app */,
+				88246556262029B2008B0695 /* GuitarKitTests.xctest */,
+				88246561262029B2008B0695 /* GuitarKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88246547262029B2008B0695 /* GuitarKit */ = {
+			isa = PBXGroup;
+			children = (
+				88246548262029B2008B0695 /* GuitarKitApp.swift */,
+				8852218F26305A9A005E3F06 /* Extensions.swift */,
+				8824654A262029B2008B0695 /* ContentView.swift */,
+				88297486264A6FC200E006B2 /* Audio */,
+				882B4357265A9DC40021A0B6 /* View */,
+				882B4358265A9DDC0021A0B6 /* Model */,
+				8832B9EA2624069A002D93FC /* Localizable.strings */,
+				8824654C262029B2008B0695 /* Assets.xcassets */,
+				88246551262029B2008B0695 /* Info.plist */,
+				8824654E262029B2008B0695 /* Preview Content */,
+			);
+			path = GuitarKit;
+			sourceTree = "<group>";
+		};
+		8824654E262029B2008B0695 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8824654F262029B2008B0695 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88246559262029B2008B0695 /* GuitarKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8824655A262029B2008B0695 /* GuitarKitTests.swift */,
+				8824655C262029B2008B0695 /* Info.plist */,
+			);
+			path = GuitarKitTests;
+			sourceTree = "<group>";
+		};
+		88246564262029B2008B0695 /* GuitarKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88246565262029B2008B0695 /* GuitarKitUITests.swift */,
+				88246567262029B2008B0695 /* Info.plist */,
+			);
+			path = GuitarKitUITests;
+			sourceTree = "<group>";
+		};
+		88297486264A6FC200E006B2 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				882B43512659134B0021A0B6 /* beat1.m4a */,
+				882B4353265913520021A0B6 /* beat2.m4a */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		882B4357265A9DC40021A0B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8824657626202F5D008B0695 /* TunerView.swift */,
+				8839EDBE26582C3500753B5E /* MetronomeView.swift */,
+				88A480D92664A56200E3E9E5 /* AdMobViews.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		882B4358265A9DDC0021A0B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88A480DB2665DEBA00E3E9E5 /* UserDefaults.swift */,
+				88B7D2752655118C0082AD76 /* Notes.swift */,
+				88CC662726455AC50097FD14 /* TunerConductor.swift */,
+				882B435526593DFE0021A0B6 /* MetronomeConductor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAE42A5E55755E242D0EF674 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4145A560B55CB07AEDD506C /* Pods-GuitarKit.debug.xcconfig */,
+				6DFAB0CBEFA04AD86A7A011F /* Pods-GuitarKit.release.xcconfig */,
+				803EE886111C04C0C3746AB0 /* Pods-GuitarKit-GuitarKitUITests.debug.xcconfig */,
+				A274CBF20FBD77B625D621F3 /* Pods-GuitarKit-GuitarKitUITests.release.xcconfig */,
+				B6A0D575F8F8CB961157384E /* Pods-GuitarKitTests.debug.xcconfig */,
+				D502E7D3F649248C95BB4641 /* Pods-GuitarKitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88246544262029B2008B0695 /* GuitarKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8824656A262029B2008B0695 /* Build configuration list for PBXNativeTarget "GuitarKit" */;
+			buildPhases = (
+				83F7D21A20E1B41AD9ACBE1F /* [CP] Check Pods Manifest.lock */,
+				88246541262029B2008B0695 /* Sources */,
+				88246542262029B2008B0695 /* Frameworks */,
+				88246543262029B2008B0695 /* Resources */,
+				DC9C92331CCF19697E20F164 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuitarKit;
+			packageProductDependencies = (
+				8851489626463CB500D3B895 /* AudioKit */,
+			);
+			productName = GuitarUtilities;
+			productReference = 88246545262029B2008B0695 /* GuitarKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88246555262029B2008B0695 /* GuitarKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8824656D262029B2008B0695 /* Build configuration list for PBXNativeTarget "GuitarKitTests" */;
+			buildPhases = (
+				1428339BF5BD8171EE35B709 /* [CP] Check Pods Manifest.lock */,
+				88246552262029B2008B0695 /* Sources */,
+				88246553262029B2008B0695 /* Frameworks */,
+				88246554262029B2008B0695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88246558262029B2008B0695 /* PBXTargetDependency */,
+			);
+			name = GuitarKitTests;
+			productName = GuitarUtilitiesTests;
+			productReference = 88246556262029B2008B0695 /* GuitarKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88246560262029B2008B0695 /* GuitarKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88246570262029B2008B0695 /* Build configuration list for PBXNativeTarget "GuitarKitUITests" */;
+			buildPhases = (
+				495AC8C6C305CD99CDA9F250 /* [CP] Check Pods Manifest.lock */,
+				8824655D262029B2008B0695 /* Sources */,
+				8824655E262029B2008B0695 /* Frameworks */,
+				8824655F262029B2008B0695 /* Resources */,
+				281B3BED1E3CEDAC3C9B4A8F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88246563262029B2008B0695 /* PBXTargetDependency */,
+			);
+			name = GuitarKitUITests;
+			productName = GuitarUtilitiesUITests;
+			productReference = 88246561262029B2008B0695 /* GuitarKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8824653D262029B2008B0695 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					88246544262029B2008B0695 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					88246555262029B2008B0695 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 88246544262029B2008B0695;
+					};
+					88246560262029B2008B0695 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 88246544262029B2008B0695;
+					};
+				};
+			};
+			buildConfigurationList = 88246540262029B2008B0695 /* Build configuration list for PBXProject "GuitarKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hant",
+			);
+			mainGroup = 8824653C262029B2008B0695;
+			packageReferences = (
+				8851489526463CB500D3B895 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
+			productRefGroup = 88246546262029B2008B0695 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88246544262029B2008B0695 /* GuitarKit */,
+				88246555262029B2008B0695 /* GuitarKitTests */,
+				88246560262029B2008B0695 /* GuitarKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88246543262029B2008B0695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88246550262029B2008B0695 /* Preview Assets.xcassets in Resources */,
+				882B4354265913520021A0B6 /* beat2.m4a in Resources */,
+				8832B9E82624069A002D93FC /* Localizable.strings in Resources */,
+				882B43522659134B0021A0B6 /* beat1.m4a in Resources */,
+				8824654D262029B2008B0695 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88246554262029B2008B0695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8824655F262029B2008B0695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1428339BF5BD8171EE35B709 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuitarKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		281B3BED1E3CEDAC3C9B4A8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuitarKit-GuitarKitUITests/Pods-GuitarKit-GuitarKitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuitarKit-GuitarKitUITests/Pods-GuitarKit-GuitarKitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuitarKit-GuitarKitUITests/Pods-GuitarKit-GuitarKitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		495AC8C6C305CD99CDA9F250 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuitarKit-GuitarKitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83F7D21A20E1B41AD9ACBE1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuitarKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC9C92331CCF19697E20F164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuitarKit/Pods-GuitarKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuitarKit/Pods-GuitarKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuitarKit/Pods-GuitarKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88246541262029B2008B0695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8824654B262029B2008B0695 /* ContentView.swift in Sources */,
+				88B7D2762655118C0082AD76 /* Notes.swift in Sources */,
+				88246549262029B2008B0695 /* GuitarKitApp.swift in Sources */,
+				8824657726202F5D008B0695 /* TunerView.swift in Sources */,
+				88A480DA2664A56200E3E9E5 /* AdMobViews.swift in Sources */,
+				88CC662826455AC50097FD14 /* TunerConductor.swift in Sources */,
+				88A480DC2665DEBA00E3E9E5 /* UserDefaults.swift in Sources */,
+				8852219026305A9A005E3F06 /* Extensions.swift in Sources */,
+				882B435626593DFE0021A0B6 /* MetronomeConductor.swift in Sources */,
+				8839EDBF26582C3500753B5E /* MetronomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88246552262029B2008B0695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8824655B262029B2008B0695 /* GuitarKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8824655D262029B2008B0695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88246566262029B2008B0695 /* GuitarKitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88246558262029B2008B0695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88246544262029B2008B0695 /* GuitarKit */;
+			targetProxy = 88246557262029B2008B0695 /* PBXContainerItemProxy */;
+		};
+		88246563262029B2008B0695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88246544262029B2008B0695 /* GuitarKit */;
+			targetProxy = 88246562262029B2008B0695 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8832B9EA2624069A002D93FC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8897AA91266DC6DA0010210C /* en */,
+				8897AA92266DC6EE0010210C /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88246568262029B2008B0695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88246569262029B2008B0695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8824656B262029B2008B0695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4145A560B55CB07AEDD506C /* Pods-GuitarKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"GuitarKit/Preview Content\"";
+				DEVELOPMENT_TEAM = AYR22XVQYG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GuitarKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andis.GuitarKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8824656C262029B2008B0695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DFAB0CBEFA04AD86A7A011F /* Pods-GuitarKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"GuitarKit/Preview Content\"";
+				DEVELOPMENT_TEAM = AYR22XVQYG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GuitarKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andis.GuitarKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8824656E262029B2008B0695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A0D575F8F8CB961157384E /* Pods-GuitarKitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AYR22XVQYG;
+				INFOPLIST_FILE = GuitarUtilitiesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andis.GuitarUtilitiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarKit.app/GuitarKit";
+			};
+			name = Debug;
+		};
+		8824656F262029B2008B0695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D502E7D3F649248C95BB4641 /* Pods-GuitarKitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AYR22XVQYG;
+				INFOPLIST_FILE = GuitarUtilitiesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andis.GuitarUtilitiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarKit.app/GuitarKit";
+			};
+			name = Release;
+		};
+		88246571262029B2008B0695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 803EE886111C04C0C3746AB0 /* Pods-GuitarKit-GuitarKitUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AYR22XVQYG;
+				INFOPLIST_FILE = GuitarUtilitiesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andis.GuitarUtilitiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuitarUtilities;
+			};
+			name = Debug;
+		};
+		88246572262029B2008B0695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A274CBF20FBD77B625D621F3 /* Pods-GuitarKit-GuitarKitUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AYR22XVQYG;
+				INFOPLIST_FILE = GuitarUtilitiesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andis.GuitarUtilitiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuitarUtilities;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88246540262029B2008B0695 /* Build configuration list for PBXProject "GuitarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88246568262029B2008B0695 /* Debug */,
+				88246569262029B2008B0695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8824656A262029B2008B0695 /* Build configuration list for PBXNativeTarget "GuitarKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8824656B262029B2008B0695 /* Debug */,
+				8824656C262029B2008B0695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8824656D262029B2008B0695 /* Build configuration list for PBXNativeTarget "GuitarKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8824656E262029B2008B0695 /* Debug */,
+				8824656F262029B2008B0695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88246570262029B2008B0695 /* Build configuration list for PBXNativeTarget "GuitarKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88246571262029B2008B0695 /* Debug */,
+				88246572262029B2008B0695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8851489526463CB500D3B895 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8851489626463CB500D3B895 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8851489526463CB500D3B895 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8824653D262029B2008B0695 /* Project object */;
+}

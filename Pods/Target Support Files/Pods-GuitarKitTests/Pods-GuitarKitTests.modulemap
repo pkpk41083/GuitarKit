@@ -1,0 +1,6 @@
+framework module Pods_GuitarKitTests {
+  umbrella header "Pods-GuitarKitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
