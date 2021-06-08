@@ -10,6 +10,7 @@ import AVFoundation
 import UIKit
 
 struct MetronomeView: View {
+    @EnvironmentObject var userSettings: UserSettings
     @StateObject var conductor = MetronomeConductor()
     
     var body: some View {
@@ -58,15 +59,13 @@ struct MetronomeView: View {
                 if conductor.data.isShowingCustomKeyboard {
                     CustomKeyboard().frame(width: geo.frame(in: .local).maxX, height: geo.frame(in: .local).maxY / 3)
                 }
-                Banner()
+                if !userSettings.isAdFree {
+                    Banner()
+                }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .environmentObject(conductor)
-        .onAppear {
-            // change selected index of tabView
-            NotificationCenter.default.post(name: Notification.getName(.tappingTab), object: self, userInfo: ["selectedIndex" : 2])
-        }
         .onDisappear {
             conductor.stopMetronome()
             conductor.resetData()

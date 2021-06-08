@@ -10,6 +10,7 @@ import AVFoundation
 import GoogleMobileAds
 
 struct TunerView: View {
+    @EnvironmentObject var userSettings: UserSettings
     @StateObject var conductor = TunerConductor()
     let pub = NotificationCenter.default.publisher(for: Notification.getName(.alreadyStopMetronome))
     
@@ -19,7 +20,9 @@ struct TunerView: View {
                 VStack(spacing: 0) {
                     PitchDashBoard().padding(10)
                     NoteScrollView()
-                    Banner()
+                    if !userSettings.isAdFree {
+                        Banner()
+                    }
                 }
                 if conductor.data.isLoading {
                     LoadingView().frame(width: geo.frame(in: .local).maxX / 4, height: geo.frame(in: .local).maxX / 4)

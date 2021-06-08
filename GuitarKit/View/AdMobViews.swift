@@ -15,7 +15,7 @@ final private class BannerVC: UIViewControllerRepresentable  {
         let view = GADBannerView(adSize: kGADAdSizeBanner)
         let viewController = UIViewController()
         
-        view.adUnitID = "ca-app-pub-1764411444589029/5309152259"
+        view.adUnitID = "ca-app-pub-1764411444589029/5309152259" // "ca-app-pub-1764411444589029/5309152259"
         view.rootViewController = viewController
         viewController.view.addSubview(view)
         viewController.view.frame = CGRect(origin: .zero, size: kGADAdSizeBanner.size)
@@ -42,56 +42,50 @@ struct Banner: View{
 final class InterstitialAd: NSObject {
     var interstitial: GADInterstitialAd?
     
-    override init() {
-        super.init()
-        
-        // load
+    func showAd () {
+        // init ad
         GADInterstitialAd.load(withAdUnitID: "ca-app-pub-1764411444589029/9220477105", request: GADRequest()) { ad, err in
             guard err == nil else {
                 print(err?.localizedDescription ?? "")
                 return
             }
             self.interstitial = ad
-        }
-    }
-    
-    func showAd () {
-        if let root = UIApplication.shared.windows.first?.rootViewController {
-            self.interstitial?.present(fromRootViewController: root)
+            
+            // show ad
+            if let root = UIApplication.shared.windows.first?.rootViewController {
+                self.interstitial?.present(fromRootViewController: root)
+            }
         }
     }
 }
 
 final class RewardAd: NSObject {
     var reward: GADRewardedAd?
-    
     var rewardFunction: (() -> Void)? = nil
     
-    override init () {
-        super.init()
-        
-        // load
+    func showAd (rewardFunction: @escaping () -> Void) {
+        // init ad
         GADRewardedAd.load(withAdUnitID: "ca-app-pub-1764411444589029/9328288315", request: GADRequest()) { ad, err in
             guard err == nil else {
                 print(err?.localizedDescription ?? "")
                 return
             }
             self.reward = ad
-        }
-    }
-    
-    func showAd (rewardFunction: @escaping () -> Void) {
-        if let root = UIApplication.shared.windows.first?.rootViewController {
-            self.reward?.present(fromRootViewController: root, userDidEarnRewardHandler: {
-                rewardFunction()
-            })
+            
+            // show ad
+            if let root = UIApplication.shared.windows.first?.rootViewController {
+                self.reward?.present(fromRootViewController: root, userDidEarnRewardHandler: {
+                    rewardFunction()
+                })
+            }
         }
     }
 }
 
 
 struct RewardAdButton: View {
-    @StateObject var userSettings = UserSettings()
+    @EnvironmentObject var userSettings: UserSettings
+    @EnvironmentObject var adData: AdData
     @State var rewardAd = RewardAd()
     
     var body: some View {
@@ -105,11 +99,17 @@ struct RewardAdButton: View {
                     }
                 } else {
                     Button {
+                        adData.rewardAdIsloading = true
                         rewardAd.showAd {
+                            adData.rewardAdIsloading = false
                             userSettings.rewardCount += 1
                         }
                     } label: {
-                        Text("ad-free(\(userSettings.rewardCount)/5)")
+                        if adData.rewardAdIsloading {
+                            ProgressView()
+                        } else {
+                            Text("ad-free(\(userSettings.rewardCount)/5)")
+                        }
                     }
                     .frame(width: geo.frame(in: .local).maxX / 3, height: geo.frame(in: .local).height)
                     .background(
@@ -120,9 +120,5 @@ struct RewardAdButton: View {
                 }
             }
         }
-    }
-    
-    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
-        print("aaa")
     }
 }

@@ -19,6 +19,7 @@
 		882B4354265913520021A0B6 /* beat2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 882B4353265913520021A0B6 /* beat2.m4a */; };
 		882B435626593DFE0021A0B6 /* MetronomeConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882B435526593DFE0021A0B6 /* MetronomeConductor.swift */; };
 		8832B9E82624069A002D93FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8832B9EA2624069A002D93FC /* Localizable.strings */; };
+		8835798A266F79E4009B74FF /* AdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88357989266F79E4009B74FF /* AdData.swift */; };
 		8839EDBF26582C3500753B5E /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839EDBE26582C3500753B5E /* MetronomeView.swift */; };
 		8851489726463CB500D3B895 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8851489626463CB500D3B895 /* AudioKit */; };
 		8852219026305A9A005E3F06 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852218F26305A9A005E3F06 /* Extensions.swift */; };
@@ -56,7 +57,6 @@
 		8824654A262029B2008B0695 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8824654C262029B2008B0695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8824654F262029B2008B0695 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		88246551262029B2008B0695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88246556262029B2008B0695 /* GuitarKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8824655A262029B2008B0695 /* GuitarKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarKitTests.swift; sourceTree = "<group>"; };
 		8824655C262029B2008B0695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +67,10 @@
 		882B43512659134B0021A0B6 /* beat1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = beat1.m4a; path = ../../../audio/beat1.m4a; sourceTree = "<group>"; };
 		882B4353265913520021A0B6 /* beat2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = beat2.m4a; path = ../../../audio/beat2.m4a; sourceTree = "<group>"; };
 		882B435526593DFE0021A0B6 /* MetronomeConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeConductor.swift; sourceTree = "<group>"; };
+		88357983266EFD2D009B74FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		88357985266EFD3D009B74FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		88357986266EFD3F009B74FF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hant"; path = "zh-Hant.lproj/Info.plist"; sourceTree = "<group>"; };
+		88357989266F79E4009B74FF /* AdData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdData.swift; sourceTree = "<group>"; };
 		8839EDBE26582C3500753B5E /* MetronomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeView.swift; sourceTree = "<group>"; };
 		8852218F26305A9A005E3F06 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8897AA91266DC6DA0010210C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -155,7 +159,7 @@
 				882B4358265A9DDC0021A0B6 /* Model */,
 				8832B9EA2624069A002D93FC /* Localizable.strings */,
 				8824654C262029B2008B0695 /* Assets.xcassets */,
-				88246551262029B2008B0695 /* Info.plist */,
+				88357984266EFD2D009B74FF /* Info.plist */,
 				8824654E262029B2008B0695 /* Preview Content */,
 			);
 			path = GuitarKit;
@@ -210,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				88A480DB2665DEBA00E3E9E5 /* UserDefaults.swift */,
+				88357989266F79E4009B74FF /* AdData.swift */,
 				88B7D2752655118C0082AD76 /* Notes.swift */,
 				88CC662726455AC50097FD14 /* TunerConductor.swift */,
 				882B435526593DFE0021A0B6 /* MetronomeConductor.swift */,
@@ -478,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8824654B262029B2008B0695 /* ContentView.swift in Sources */,
+				8835798A266F79E4009B74FF /* AdData.swift in Sources */,
 				88B7D2762655118C0082AD76 /* Notes.swift in Sources */,
 				88246549262029B2008B0695 /* GuitarKitApp.swift in Sources */,
 				8824657726202F5D008B0695 /* TunerView.swift in Sources */,
@@ -529,6 +535,16 @@
 				8897AA92266DC6EE0010210C /* zh-Hant */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		88357984266EFD2D009B74FF /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88357983266EFD2D009B74FF /* Base */,
+				88357985266EFD3D009B74FF /* en */,
+				88357986266EFD3F009B74FF /* zh-Hant */,
+			);
+			name = Info.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -659,11 +675,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"GuitarKit/Preview Content\"";
 				DEVELOPMENT_TEAM = AYR22XVQYG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = GuitarKit/Info.plist;
+				INFOPLIST_FILE = GuitarKit/Base.lproj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -683,11 +699,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"GuitarKit/Preview Content\"";
 				DEVELOPMENT_TEAM = AYR22XVQYG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = GuitarKit/Info.plist;
+				INFOPLIST_FILE = GuitarKit/Base.lproj/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

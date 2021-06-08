@@ -9,8 +9,9 @@ import SwiftUI
 import GoogleMobileAds
 
 struct ContentView: View {
+    @StateObject var userSettings = UserSettings()
+    @StateObject var adData = AdData()
     @State var interstitial = InterstitialAd()
-    let pub = NotificationCenter.default.publisher(for: Notification.getName(.tappingTab))
     
     var body: some View {
         GeometryReader { geo in
@@ -29,17 +30,21 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            // init for new ad?
-            interstitial = InterstitialAd()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
-                interstitial.showAd()
+            if !userSettings.isAdFree {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    if !adData.rewardAdIsloading {
+                        interstitial.showAd()
+                    }
+                }
             }
         }
+        .environmentObject(userSettings)
+        .environmentObject(adData)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

@@ -30,7 +30,6 @@ extension CGRect {
 extension Notification {
     enum NotiName: String {
         case alreadyStopMetronome = "alreadyStopMetronome"
-        case tappingTab = "tappingTab"
     }
     
     static func getName (_ notiName: NotiName) -> Notification.Name {
